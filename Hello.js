@@ -78,21 +78,25 @@ Every string instance has a property called length that stores the number of cha
         Constant variables must be assigned a value when declared. If you try to declare a const variable without a value, you’ll get a SyntaxError.  */
         const changeMe = true
         changeMe = false 
-        console.log(changeMe) //type error because tried reassigned.
+        console.log(changeMe)
+         //type error because tried reassigned.
 
 /*String Concatenation with Variables
     In previous exercises, we assigned strings to variables. Now, let’s go over how to connect, or concatenate, strings in variables.*/
     let myPet = 'armadillo';
     console.log('I own a pet ' + myPet + '.'); 
-    Output: 'I own a pet armadillo.' 
+    //Output: 'I own a pet armadillo.' 
 
 /*String Interpolation
 In the ES6 version of JavaScript, we can insert, or interpolate, variables into strings using template literals. 
 Check out the following example where a template literal is used to log strings together: */
-const myPet = 'armadillo';
-console.log(`I own a pet ${myPet}.`);
+    let myPet1 = 'armadillo';
+    console.log(`I own a pet ${myPet1}.`);
 // Output: I own a pet armadillo.
 
 /*typeof operator
 While writing code, it can be useful to keep track of the data types of the variables in your program.
  If you need to check the data type of a variable’s value, you can use the typeof operator.  */
+let myName = 'hello'
+console.log(typeof myName)
+
